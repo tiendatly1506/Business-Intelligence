@@ -1,12 +1,13 @@
 # Business Intelligence
 
-Power BI projects from my Bachelor of Business Analytics (course 2030AFE: Business Intelligence), covering dashboard design, data modelling and DAX. Each project has the Power BI file (`.pbix`) and a PDF export, so the dashboards can be viewed without Power BI.
+Power BI projects from my Bachelor of Business Analytics (course 2030AFE: Business Intelligence), covering dashboard design, data modelling and DAX. Each project has the working file (Power BI `.pbix` or Excel `.xlsx`) and a PDF, so the work can be viewed without opening the software.
 
 | Project | Power BI file | PDF export |
 |---|---|---|
 | 1. ABC International: executive sales report | [ABC International.pbix](./ABC%20International.pbix) | [ABC International.pdf](./ABC%20International.pdf) |
 | 2. Office World: business problem dashboard | [OfficeWorld.pbix](./OfficeWorld.pbix) | [OfficeWorld.pdf](./OfficeWorld.pdf) |
 | 3. Laptop Sales: advanced DAX analysis | [DAX.pbix](./DAX.pbix) | [DAX.pdf](./DAX.pdf) |
+| 4. Tourism: predictive modelling in Excel | [Tourism Regression Model.xlsx](./Tourism%20Regression%20Model.xlsx) | [Predictive Modelling.pdf](./Predictive%20Modelling.pdf) |
 
 ---
 
@@ -88,3 +89,31 @@ Power BI projects from my Bachelor of Business Analytics (course 2030AFE: Busine
 - **Qualifying reps card:** 43 representatives are counted by the card visual.
 
 **Skills and tools:** DAX, calculated columns vs. measures, filter context, conditional counting, ranking measures, Power BI visuals (pie, table, card).
+
+---
+
+## 4. Tourism Revenue: Predictive Modelling in Excel
+
+**Scenario:** A tourism hotel operator wants to predict local government tax revenue from hotel stays. I analysed 45 years of annual data (1980 to 2024) on guest nights and tax revenue in Excel using correlation analysis and simple linear regression.
+
+**What I did**
+- Built the analysis in Excel with live formulas (correlation, regression statistics, ANOVA, coefficients) and a forecast calculator where any guest night figure returns predicted tax revenue.
+- Measured the strength and direction of the relationship with a correlation coefficient.
+- Visualised it with a scatter plot and linear trendline.
+- Built a simple linear regression model (tax revenue as a function of guest nights), then assessed its fit and significance.
+
+**Key results**
+
+| Measure | Result |
+|---|---|
+| Correlation | 0.8988 (very strong, positive) |
+| Regression equation | Tax Revenue = 33.5545 + 0.1492 x Guest Nights |
+| Slope meaning | Every extra 1,000 guest nights adds about $0.1492m in tax revenue |
+| R Square | 0.8078 (guest nights explain about 81% of the variation in tax revenue) |
+| Significance | p-value of 5.33E-17, so the relationship is highly statistically significant |
+
+**Application:** The model can forecast tax revenue from projected guest nights to support budgeting, and estimate the return on tourism growth initiatives.
+
+**Limitations:** It ignores other drivers such as tax rate changes and economic conditions, and it should not be used to predict far outside the observed range of guest nights.
+
+**Skills and tools:** Excel, correlation analysis, simple linear regression, model interpretation, forecasting and limitations analysis.
